@@ -13,12 +13,12 @@ const FeaturedJobs = () => {
     return (
         <div>
             <div>
-                <h2 className="text-5xl">Featured Jobs</h2>
-                <p>Explore thousands of job opportunities with
+                <h2 className="text-5xl text-center">Featured Jobs</h2>
+                <p className="text-center">Explore thousands of job opportunities with
                     all the information you need.Its your future
                 </p>
             </div>
-            <div>
+            <div className="grid grid-cols-2 gap-4">
                 {
                     jobs.map(job =><Job key={job.id} job={job}></Job>)
                 }
